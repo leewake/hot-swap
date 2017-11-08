@@ -23,6 +23,7 @@ public class SwapEndPoint extends AbstractMvcEndpoint{
 
     /**
      * 刚开始构造函数写成有参，导致一直报错
+     * 自定义的EndPoint，构造函数需用super写法，指明路径（个人理解）
      * 访问链接为：localhost:8081/hot-swap/swap?bean=haiServiceImpl
      */
     public SwapEndPoint() {

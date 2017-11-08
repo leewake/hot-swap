@@ -12,14 +12,10 @@ import java.rmi.server.UnicastRemoteObject;
  */
 
 @Service
-public class HelloServiceImpl extends UnicastRemoteObject implements HelloService {
-
-
-    public HelloServiceImpl() throws RemoteException {
-    }
+public class HelloServiceImpl implements HelloService {
 
     @Override
-    public String sayHello(String name) throws RemoteException {
+    public String sayHello(String name) {
         return String.format("Hello %s", name);
     }
 

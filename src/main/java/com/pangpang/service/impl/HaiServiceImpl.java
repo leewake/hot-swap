@@ -14,7 +14,7 @@ import java.rmi.RemoteException;
 public class HaiServiceImpl implements HelloService {
 
     @Override
-    public String sayHello(String name) throws RemoteException {
+    public String sayHello(String name) {
         return String.format("Hai %s", name);
     }
 }
